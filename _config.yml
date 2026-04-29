@@ -22,8 +22,8 @@ navigation:
   - {url: "/about/", title: "About Me", sidebaricon: address-card}
 
 external:
-  - {title: Mail, icon: envelope, url: "mailto:write@gauravwrites.com"}
-  - {title: Bluesky, icon: bluesky, url: "https://bsky.app/profile/gauravwrites.com"}
+  - {title: Mail, icon: envelope, url: "mailto:yo@gauravwrites.com"}
+  - {title: Bluesky, icon: "fa-brands fa-bluesky", url: "https://bsky.app/profile/gauravwrites.com"}
   - {title: Mastodon, icon: mastodon, url: "https://mastodon.social/@gauravwrites"}
 
 comments:
