@@ -9,7 +9,13 @@
     {%- assign title = item.title | default: node.title -%}
     {%- assign icon = item.icon | default: item.sidebaricon -%}
     <a href="{{ url | relative_url }}" class="{% if url == page.url %}selected{% endif %}">
-      <svg aria-hidden="true" width="1em" height="1em"><use xlink:href="{{ "/assets/fontawesome/icons.svg" | relative_url }}#{{ icon }}"></use></svg>
+      
+      {% if icon == "pixelfed" %}
+        <img src="{{ '/assets/images/pixelfed.svg' | relative_url }}" style="width: 1em; height: 1em; vertical-align: middle; fill: currentColor;">
+      {% else %}
+        <svg aria-hidden="true" width="1em" height="1em"><use xlink:href="{{ "/assets/fontawesome/icons.svg" | relative_url }}#{{ icon }}"></use></svg>
+      {% endif %}
+
       <span>{{ title }}</span>
     </a>
   {%- endfor -%}
