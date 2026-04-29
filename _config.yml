@@ -22,9 +22,9 @@ navigation:
   - {url: "/about/", title: "About Me", sidebaricon: address-card}
 
 external:
-  - {title: Mail, icon: envelope, url: "mailto:write@gauravwrites.com"}
-  - {title: Bluesky, icon: cloud, url: "https://bsky.app/profile/gauravwrites.com"}
-  - {title: Mastodon, icon: mastodon, url: "https://mastodon.social/@gauravwrites"}
+  - {title: Mail, icon: "fas fa-envelope", url: "mailto:write@gauravwrites.com"}
+  - {title: Bluesky, icon: "fab fa-bluesky", url: "https://bsky.app/profile/gauravwrites.com"}
+  - {title: Mastodon, icon: "fab fa-mastodon", url: "https://mastodon.social/@gauravwrites"}
 
 comments:
 #  disqus_shortname: ""         # see https://disqus.com
