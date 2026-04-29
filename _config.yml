@@ -23,7 +23,6 @@ navigation:
 
 external:
   - {title: Mail, icon: envelope, url: "mailto:write@gauravwrites.com"}
-  - {title: Pixelfed, icon: pixelfed, url: "https://pixelfed.social/gauravwrites"}
   - {title: Mastodon, icon: mastodon, url: "https://mastodon.social/@gauravwrites"}
   
 comments:
