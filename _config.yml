@@ -1,6 +1,7 @@
-title: "writtenbygaurav"
+title: "Gaurav Writes"
 author: "Gaurav"
-description: "write stuff idk"
+description: "Gaurav's personal blog"
+url: "https://gauravwrites.com" # Setting this now prepares your links for the domain
 permalink: /:title/
 lang: "en"
 excerpt_separator: "<!--more-->"
@@ -21,5 +22,8 @@ external:
   - {title: Mail, icon: envelope, url: "mailto:write@gauravwrites.com"}
   - {title: Mastodon, icon: mastodon, url: "https://mastodon.social/@gauravwrites"}
 
+# SEO & Discovery
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+
