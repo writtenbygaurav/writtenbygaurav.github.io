@@ -1,6 +1,6 @@
 title: "Gaurav Writes"
 author: "Gaurav"
-description: "Gaurav's personal blog"
+description: "The personal blog of Gaurav. Thoughts on the philosophy of potatoes and everything in between."
 url: "https://gauravwrites.com" # Setting this now prepares your links for the domain
 permalink: /:title/
 lang: "en"
@@ -25,5 +25,4 @@ external:
 # SEO & Discovery
 plugins:
   - jekyll-feed
-  - jekyll-seo-tag
-
+  - jekyll-seo-tag # Add this! It's the gold standard for Google discovery
