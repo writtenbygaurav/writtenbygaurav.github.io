@@ -3,15 +3,20 @@ layout: default
 title: "Home"
 ---
 
-{% if site.show_excerpts %}
-  {% for post in site.posts %}
+<div class="posts">
+  {% for post in site.posts limit:4 %}
     <article>
       {% include meta.html post=post %}
-      {{ post.excerpt }}
-      <footer class="button"><a href="{{ post.url | relative_url }}">read more</a></footer>
+      
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+
+      {% if post.content contains site.excerpt_separator %}
+        <footer class="button">
+          <a href="{{ post.url | relative_url }}">read more</a>
+        </footer>
+      {% endif %}
     </article>
   {% endfor %}
-{% else %}
-  {% capture source %}{% include_relative archive.html title="Posts" %}{% endcapture %}
-  {{ source | split: "---" | last }}
-{% endif %}
+</div>
