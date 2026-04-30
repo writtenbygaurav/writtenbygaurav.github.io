@@ -1,23 +1,24 @@
 ---
-layout: home
+layout: page
 title: ""
 tab_title: "Home"
 permalink: /
 ---
 
-{% assign recent_posts = site.posts | slice: 0, 4 %}
-
 <div class="posts">
-{% for post in recent_posts %}
+{% for post in site.posts limit:4 %}
   <article>
-    {% include meta.html post=post %}
+    <header>
+      <small>{{ post.date | date: "%B %d, %Y" }}</small>
+      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+    </header>
     
     <div class="entry">
       {{ post.excerpt }}
     </div>
 
-    <footer class="button">
-      <a href="{{ post.url | relative_url }}">read more</a>
+    <footer class="button" style="margin-bottom: 2em;">
+      <a href="{{ post.url | relative_url }}">Read more →</a>
     </footer>
   </article>
 {% endfor %}
