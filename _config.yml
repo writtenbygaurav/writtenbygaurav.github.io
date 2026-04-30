@@ -12,9 +12,9 @@ show_frame: false
 show_sidebar: false
 show_minimal: false
 
-# Pagination Settings
+# Pagination
 paginate: 4
-paginate_path: "/"
+paginate_path: "/page:num/"
 
 # Menu
 navigation:
@@ -26,5 +26,5 @@ external:
   - {title: Mastodon, icon: mastodon, url: "https://mastodon.social/@gauravwrites"}
 
 plugins:
- - jekyll-feed
- - jekyll-paginate
+  - jekyll-feed
+  - jekyll-paginate
