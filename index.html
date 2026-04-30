@@ -4,7 +4,7 @@ title: "Home"
 ---
 
 <div class="posts">
-  {% for post in site.posts limit:4 %}
+  {% for post in site.posts %}
     <article>
       {% include meta.html post=post %}
       
@@ -12,11 +12,9 @@ title: "Home"
         {{ post.excerpt }}
       </div>
 
-      {% if post.content contains site.excerpt_separator %}
-        <footer class="button">
-          <a href="{{ post.url | relative_url }}">read more</a>
-        </footer>
-      {% endif %}
+      <footer class="button">
+        <a href="{{ post.url | relative_url }}">read more</a>
+      </footer>
     </article>
   {% endfor %}
 </div>
