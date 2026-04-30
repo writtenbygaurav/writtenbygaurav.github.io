@@ -1,10 +1,9 @@
 ---
 layout: page
-title: "the index"
+title: ""
 ---
 
 <nav class="smooth">
-  <p style="font-size: 0.9rem; opacity: 0.6; margin-bottom: 20px;">Here's everything I've written</p>
   {% for post in site.posts %}
     <div>
       <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
